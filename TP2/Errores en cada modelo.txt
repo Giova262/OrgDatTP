@@ -1,0 +1,115 @@
+Random Forest
+
+//Repitiendo 2 veces idzona
+RMSLE Error (train): 0.12927
+RMSLE Error (Test): 0.35009
+
+//Sin repetir idzona
+RMSLE Error (train): 0.13889
+RMSLE Error (Test): 0.35909
+
+//Repitiendo metroscubiertos
+
+RMSLE Error (train): 0.13880
+RMSLE Error (Test): 0.36262
+
+
+
+
+
+//Ultimo  con tipopropiedad=3 defecto
+RMSLE Error (train): 0.12766
+RMSLE Error (Test): 0.35976
+
+random_state=0,bootstrap =False,min_samples_leaf=2 ,n_jobs=-1,max_depth = 100,max_features = 5 ,min_samples_split = 2 ,n_estimators = 400
+
+/*KNN k=40*/
+RMSLE Error (train): 0.44
+RMSLE Error (Test): 0.45
+
+/*KNN k=10*/
+RMSLE Error (train): 0.40
+RMSLE Error (Test): 0.44
+
+/*KNN k=100*/
+RMSLE Error (train): 0.47560
+RMSLE Error (Test): 0.47963
+
+
+
+/*regressor = GradientBoostingRegressor(n_estimators=100, learning_rate=0.1,
+    max_depth=10, random_state=0, loss='ls')*/
+RMSLE Error (train): 0.29354
+RMSLE Error (Test): 0.36422
+
+
+
+/*  Voting regressor random forest 
+ 
+r1 = RandomForestRegressor(random_state=0,bootstrap =False,min_samples_leaf=2 ,
+                           n_jobs=-1,max_depth = 3,max_features = 6,min_samples_split = 2 ,
+                           n_estimators = 1)
+
+r2 = RandomForestRegressor(random_state=0,bootstrap =False,min_samples_leaf=2 ,
+                           n_jobs=-1,max_depth = 50,max_features = 6 ,min_samples_split = 2 ,
+                           n_estimators = 400)
+
+r3 = RandomForestRegressor(random_state=0,bootstrap =False,min_samples_leaf=2 ,n_jobs=-1,
+                           max_depth = 50,max_features = 5 ,min_samples_split = 2 ,
+                           n_estimators = 400)
+
+r4 = KNeighborsRegressor(20)
+
+er = VotingRegressor([('rf', r3),('rf2', r2)],weights =[1,1])
+
+RMSLE Error (train): 0.13227
+RMSLE Error (Test): 0.35807
+
+*/
+
+
+
+
+
+
+
+
+/*  MEJOR SCRORE */
+RMSLE Error (train): 0.13892
+RMSLE Error (Test): 0.35932
+
+
+
+
+/**/
+
+anio                            2014.67
+mes                                7.44
+metrostotales                    176.92
+centroscomercialescercanos         0.40
+piscina                            0.09
+escuelascercanas                   0.44
+metroscubiertos                  174.16
+banos                              2.13
+habitaciones                       2.90
+lat                               20.70
+lng                              -99.53
+idzona                       2438952.04
+gimnasio                           0.06
+usosmultiples                      0.06
+dtype: float64
+tipodepropiedad                    1.87
+anio                            2014.67
+metrostotales                    176.92
+antiguedad                         8.09
+centroscomercialescercanos         0.40
+garages                            1.55
+piscina                            0.09
+metroscubiertos                  174.16
+banos                              2.13
+habitaciones                       2.90
+lat                               20.70
+lng                              -99.53
+idzona                       2438952.04
+gimnasio                           0.06
+usosmultiples                      0.06

@@ -1,0 +1,139 @@
+
+Random Forest:
+
+
+Features : 
+		'anio',
+		'metrostotales',
+		'antiguedad',
+		'centroscomercialescercanos',
+		'garages',
+		'piscina',
+       		'metroscubiertos',
+		'banos',
+		'habitaciones',
+		'lat','lng',
+		'idzona',
+		'gimnasio',
+		'usosmultiples',
+              'tipodepropiedad_1_oh',
+              'tipodepropiedad_2_oh',
+              'tipodepropiedad_3_oh',
+              'tipodepropiedad_4_oh',
+              'tipodepropiedad_5_oh',
+              'tipodepropiedad_6_oh',
+              'tipodepropiedad_7_oh',
+              'tipodepropiedad_8_oh',
+              'tipodepropiedad_9_oh',
+              'tipodepropiedad_10_oh',
+              'tipodepropiedad_11_oh',
+              'tipodepropiedad_12_oh',
+              'tipodepropiedad_13_oh',
+              'tipodepropiedad_14_oh',
+              'tipodepropiedad_15_oh',
+              'tipodepropiedad_16_oh',
+              'tipodepropiedad_17_oh',
+              'tipodepropiedad_18_oh',
+              'tipodepropiedad_19_oh',
+              'tipodepropiedad_20_oh',
+              'tipodepropiedad_21_oh',
+              'tipodepropiedad_22_oh'
+
+Hiperparametros :
+
+		random_state=0,
+		bootstrap =False,
+		min_samples_leaf=2 ,
+       		n_jobs=-1,
+		max_depth = 100,
+		max_features = 5 ,
+		min_samples_split = 2 ,
+		n_estimators = 400
+
+Resultados : 
+
+1) 
+
+RMSLE Error (train): 0.11043
+RMSLE Error (Test): 0.35381
+MAE Error (train): 137166.83950
+MAE Error (Test): 589724.76308
+
+Kaggle : 653163.72675
+
+
+2) rf_random.best_params_  :
+
+{'n_estimators': 244,
+ 'min_samples_split': 5,
+ 'min_samples_leaf': 2,
+ 'max_features': 21,
+ 'max_depth': 80,
+ 'bootstrap': False}
+
+RMSLE Error (train): 0.12256
+RMSLE Error (Test): 0.35443
+MAE Error (train): 157763.43040
+MAE Error (Test): 591433.83418
+
+Kaggle : 652399.17399
+
+3) Datos del 2012 
+
+RMSLE Error (train): 0.12258
+RMSLE Error (Test): 0.35423
+MAE Error (train): 157829.10861
+MAE Error (Test): 590633.37808
+
+4) Datos del 2013
+
+RMSLE Error (train): 0.12257
+RMSLE Error (Test): 0.35562
+MAE Error (train): 136400.15032
+MAE Error (Test): 520564.53300
+
+5) Datos del 2014
+
+RMSLE Error (train): 0.13010
+RMSLE Error (Test): 0.37094
+MAE Error (train): 166793.02997
+MAE Error (Test): 602128.19252
+
+6) Datos del 2015
+
+RMSLE Error (train): 0.13040
+RMSLE Error (Test): 0.35933
+MAE Error (train): 178919.84930
+MAE Error (Test): 634560.52230
+
+7) Datos del 2016
+
+RMSLE Error (train): 0.12922
+RMSLE Error (Test): 0.37549
+MAE Error (train): 179721.27179
+MAE Error (Test): 676266.82511
+
+8) Datos del 2013 con grid search + cross valitation
+
+RMSLE Error (train): 0.12220
+RMSLE Error (Test): 0.35563
+MAE Error (train): 136249.17425
+MAE Error (Test): 520748.91087
+
+Kaggle : 821302.10004
+
+
+9) Datos 2012 con random search + cross valitarion
+
+RMSLE Error (train): 0.14232
+RMSLE Error (Test): 0.39575
+MAE Error (train): 154730.45668
+MAE Error (Test): 566025.49508
+
+10) Datos 2014 con random search + cross valitarion
+
+RMSLE Error (train): 0.26768
+RMSLE Error (Test): 0.37842
+MAE Error (train): 409893.62100
+MAE Error (Test): 617469.04231
+
